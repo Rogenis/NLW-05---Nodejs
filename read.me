@@ -1,0 +1,20 @@
+## Configurações Iniciais
+
+Instalar yarn: sudo apt install yarn nodejs
+Iniciar projeto: yarn init -yarn
+Adicionar express no projeto: yarn add express
+Adicionar os types do express: yarn add @types/express -D (Depedência)
+Instalar o typescript: yarn add typescript -D  (Depedência)
+Iniciar as configurações do typescript: yarn tsc --init
+Comando para node entender type: yarn add ts-node-dev -D (Depedência - Funciona como um nodemon)
+Scripts: yarn dev
+
+
+## Configuração do Banco de Dados(SQLite) e do ORM (typeORM).  
+Instalação: yarn add typeorm reflect-metadata sqlite3
+-> Crie o arquivo ormconfig.json e configure-o.
+-> Adicionar script do typeorm no package.json: "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+Criar as migrations: yarn typeorm migration:create -n (nome da migrations)
+
+Adicionar biblioteca uuid: yarn add uuid / yarn add @types/uuid -D
+
